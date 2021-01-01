@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Email Scrapper</title>
+  </head>
+  <body>
+    <section class="mainSection">
+      <label for="domainName">Domain : </label>
+      <input
+        type="text"
+        value="@gmail.com"
+        title="Put domain name of email address to extract example @yahoo.com"
+        id="domainName"
+      />
+      <textarea
+        id="inpTxt"
+        class="inpField"
+        cols="35"
+        rows="10"
+        placeholder="Insert Text"
+      ></textarea>
+      <textarea
+        id="outTxt"
+        placeholder="Output"
+        class="inpField"
+        readonly="ture"
+        cols="35"
+        rows="10"
+      ></textarea>
+      <input type="button" class="btnStyle" id="btnExtract" value="Extract" />
+    </section>
+    <footer id="copyright">Copyright &copy; MD. Sajid Hossain</footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

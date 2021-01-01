@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.inpField {
+  display: block;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  padding: 0.2em;
+}
+
+#domainName {
+  font-size: 18px;
+  padding: 2px;
+}
+
+.mainSection {
+  margin: 0.2em 0.4em;
+}
+
+.btnStyle {
+  background: black;
+  border: none;
+  padding: 16px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.btnStyle:hover {
+  background: white;
+  color: black;
+  border: 3px solid black;
+  padding: 13px;
+}
+
+.btnStyle:active {
+  background: green;
+  color: white;
+}
+
+#copyright {
+  padding: 0.4em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
