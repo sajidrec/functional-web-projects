@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/colorGuessStyle.css">
+
+
+    <title>Color Guessing Game</title>
+
+  </head>
+  <body>
+    
+    <header id="mainHeader" class="bg-info pb-1">
+
+      <div id="headerTxt" class="text-light text-center text-uppercase headOne">
+
+        <p class="mb-0">The great</p>
+        <span id="targetedColor" class="text-uppercase">rbg(255, 255, 255)</span>
+        <p>color game</p>
+
+      </div>
+
+      <div id="ansHint" class="text-uppercase text-light text-center ansMsg headOne"></div>
+
+    </header>
+
+    <section id="mainNavigation" class="bg-light">
+
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-1 ml-1">
+            <button id="btnNewColor" class="btn btn-light">New Colors</button>
+          </div>
+  
+          <div class="col-5">
+            <button id="btnEasyMode" class="btn btn-light ml-1">Easy</button>
+            <button id="btnHardMode" class="btn btn-light ml-1 btnSelected">Hard</button>
+          </div>
+  
+        </div>
+      </div>
+
+    </section>
+
+    <section id="mainContentBody" class="container">
+
+      <div id="squareBoxes" class="row justify-content-around my-4">
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+        <div class="col-3 my-2 mx-1 squareBoxHeight"></div>
+      </div>
+
+    </section>
+
+    <footer class="text-light text-center text-uppercase my-5 py-5">
+      All rights reserved &#169 MD. SAJID HOSSAIN
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/ColorGuessScript.js"></script>
+  </body>
+</html>
