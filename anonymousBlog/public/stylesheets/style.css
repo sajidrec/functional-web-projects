@@ -1,0 +1,29 @@
+body{
+
+    background: url("https://image.freepik.com/free-photo/black-stones-tiled-floor_1194-6238.jpg");
+    color: whitesmoke;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+#pageNotFound{
+    font-size: 5em;
+}
+
+#about{
+    font-size: 3em;
+}
+
+#postText{
+    font-size: 1.3em;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;           /* Footer height */
+    color: white;
+    background: #232323;
+    text-align: center;
+}

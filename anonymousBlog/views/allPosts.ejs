@@ -1,0 +1,28 @@
+<%- include("partials/header"); %> 
+
+<div class="container text-left">
+    <div class="row justify-content-around">
+
+
+
+        <% blogPosts.reverse().forEach((blogPost)=>{%> 
+
+            
+            <div class="card bg-dark col-5 my-5">
+                <img src="<%= blogPost.image %> " class="card-img-top img-thumbnail mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-info"><%= blogPost.title.substring(0,30) %> </h5>
+                    <small class="text-muted"><%= blogPost.postTime.toDateString() %> </small>
+                    <p class="card-text text-light"><%= blogPost.postText.substring(0,25) %>...</p>
+                    <a href="/show/<%= blogPost._id %>" class="btn btn-primary btn-sm">Full Post</a>
+                </div>
+            </div>
+            
+            
+
+        <% }); %> 
+
+    </div>
+</div>
+
+<%- include("partials/footer"); %> 

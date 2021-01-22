@@ -1,0 +1,32 @@
+<%- include("partials/header"); %> 
+
+<!-- postDetails -->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-6">
+            <a href="/show/<%= postDetails._id %>/edit">
+                <button class="btn btn-info mt-4 mb-2">Edit Post</button>
+            </a>
+        </div>
+        <div class="col-6 text-right">
+            <a href="/show/<%= postDetails._id %>/delete">
+                <button class="btn btn-danger mt-4 mb-2">Delete Post</button>
+            </a>
+        </div>
+    </div>
+
+    <img src="<%= postDetails.image %> " class="img-fluid border mt-3" alt="...">
+    <h1 class="text-success"><%= postDetails.title %> </h1>
+    <h6 class="text-muted"><%= postDetails.postTime.toDateString() %> </h6>
+    <p class="card-text text-light" id="postText"><%= postDetails.postText %></p>
+
+    <a href="/posts">
+        <button class="btn btn-info my-3">Go To Posts</button>
+    </a>
+
+</div>
+
+
+<%- include("partials/footer"); %> 
